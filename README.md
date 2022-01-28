@@ -1,10 +1,13 @@
-# Getting Started with Landing Page
+# Getting Started with react-clone-spin-2-royale
 
 ## Available Scripts
 
-## `git clone https://github.com/YonasTatek/landing_page.git`
+## live
+https://yonas-70718.web.app/
 
-## `cd landing_page`
+## ` git remote add origin https://github.com/YonasTatek/react-clone-spin-2-royale.git`
+
+## `cd react-clone-spin-2-royale`
 
 to install
 ### `npm install`
