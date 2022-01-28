@@ -1,17 +1,28 @@
-import logo from './logo.svg';
-import {
-BrowserRouter,Routes,Route} from "react-router-dom";
+import * as React from 'react';
 
-import LandingPage from './Pages/LandingPage';
-function App() {
+import Box from '@mui/material/Box';
+
+import Grid from '@mui/material/Grid';
+import RightSide from './components/RightSide';
+
+import LeftSide from './components/LeftSide';
+import './index.css'
+export default function Home() {
   return (
-    <BrowserRouter>
-    <Routes>
-      <Route exact path="/" element={<LandingPage />} />
-      
-    </Routes>
-  </BrowserRouter>
+    <Box sx={{ flexGrow: 1 }}>
+      <Grid container 
+       direction="row"
+        alignItems="stretch"
+
+      >
+        <Grid item xs={10}>
+        <LeftSide/>
+        </Grid>
+        <Grid item xs={2}>
+         <RightSide/>
+        </Grid>
+        
+      </Grid>
+    </Box>
   );
 }
-
-export default App;
